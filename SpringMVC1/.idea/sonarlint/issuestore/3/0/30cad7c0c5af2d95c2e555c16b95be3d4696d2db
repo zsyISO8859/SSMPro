@@ -1,0 +1,7 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾þ•Òÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(§€ÏØþÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÒÛƒð
+N	java:S106"9Replace this use of System.out or System.err by a logger.(©òå¾
+X
+java:S1128"BRemove this unused import 'org.aopalliance.intercept.Interceptor'.(¨ÄÐù

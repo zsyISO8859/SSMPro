@@ -1,0 +1,15 @@
+
+f	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥úÍÏ
+k	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜÷Âıÿÿÿÿ
+j
+java:S1104"TMake teach_id a static final constant or non-public and provide accessors if needed.(ùÀåš
+l
+java:S1104"VMake teach_name a static final constant or non-public and provide accessors if needed.(€íıî
+r
+java:S1104	"WMake studentList a static final constant or non-public and provide accessors if needed.(ĞéûØşÿÿÿÿ
+h	java:S116"SRename this field "teach_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÀåš
+j	java:S116"URename this field "teach_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€íıî
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÇë
+c	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥úÍÏ
+h	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øßÑ÷ÿÿÿÿÿ
+h	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú˜÷Âıÿÿÿÿ

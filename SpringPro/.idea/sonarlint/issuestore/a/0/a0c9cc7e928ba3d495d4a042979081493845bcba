@@ -1,0 +1,13 @@
+
+t
+java:S1192"WDefine a constant instead of duplicating this literal "applicationContext.xml" 4 times.(¼Ì¬ú8Ô›€¦™0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(é£²Å
+Z
+java:S1854"8Remove this useless assignment to local variable "user".(ú£§”üÿÿÿÿ8¦³ï¥™0
+K
+java:S1481")Remove this unused "user" local variable.(ú£§”üÿÿÿÿ8§³ï¥™0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8Ğ×ó¥™0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(õš‡àúÿÿÿÿ8’Ÿô¥™0
+U	java:S106""9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8Û›€¦™0
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(õš‡àúÿÿÿÿ8Û›€¦™0
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8ÌÁ¦™0

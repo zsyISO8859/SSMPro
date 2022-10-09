@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itlike_resvalue.dao.OrderMapper">
+
+    <!--   分布查询 -->
+    <resultMap id="getAllOrderMap" type="com.itlike_resvalue.domain.Order">
+        <result property="order_id" column="order_id"/>
+        <result property="order_note" column="order_note"/>
+        <result property="order_num" column="order_num"/>
+        <result property="order_time" column="order_time"/>
+        <result property="cus_id" column="cus_id"/>
+        <association property="customer" javaType="com.itlike_resvalue.domain.Customer"
+                     select="com.itlike_resvalue.dao.CustomerMapper.getCustomerWithId"
+                     column="cus_id"></association>
+    </resultMap>
+
+    <select id="getAllOrder" resultMap="getAllOrderMap">
+        select *
+        from `order`;
+    </select>
+
+    <resultMap id="getAllOrder1Map" type="com.itlike_resvalue.domain.Order">
+        <result property="order_id" column="order_id"/>
+        <result property="order_note" column="order_note"/>
+        <result property="order_num" column="order_num"/>
+        <result property="order_time" column="order_time"/>
+        <result property="cus_id" column="cus_id"/>
+        <association property="customer" javaType="com.itlike_resvalue.domain.Customer">
+            <result property="cust_id" column="cust_id"/>
+            <result property="cust_name" column="cust_name"/>
+            <result property="cust_phone" column="cust_phone"/>
+            <result property="cust_profession" column="cust_profession"/>
+            <result property="email" column="email"/>
+        </association>
+    </resultMap>
+    <select id="getAllOrder1" resultMap="getAllOrder1Map">
+        select *
+        from `order` o
+                 left join `customer` c on o.cus_id = c.cust_id;
+    </select>
+
+
+    <insert id="insertOrder" parameterType="com.itlike_resvalue.domain.Order" useGeneratedKeys="true"
+            keyProperty="order_id" keyColumn="order_id">
+        insert into `order` (order_id, order_note, order_num, order_time, cus_id)
+        values (#{order_id}, #{order_note}, #{order_num}, #{order_time}, #{customer.cust_id})
+    </insert>
+
+</mapper>

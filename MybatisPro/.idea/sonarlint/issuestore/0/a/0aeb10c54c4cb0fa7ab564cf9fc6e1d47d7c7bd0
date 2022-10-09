@@ -1,0 +1,20 @@
+
+c
+java:S2095"HUse try-with-resources or close this "SqlSession" in a "finally" clause.(ëß¿ëúÿÿÿÿ
+c
+java:S2095K"HUse try-with-resources or close this "SqlSession" in a "finally" clause.(ëß¿ëúÿÿÿÿ
+c
+java:S2095-"HUse try-with-resources or close this "SqlSession" in a "finally" clause.(ëß¿ëúÿÿÿÿ
+@
+java:S2201"*The return value of "equals" must be used.(Ò‚Ø
+l
+java:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(Ò‚Ø
+K
+java:S1751"5Remove this "break" statement or make it conditional.(›ûä·
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(ÍÕ§§ùÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(šÛÃì
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(ê¾ú®
+\
+java:S1612‚"@Replace this lambda with method reference 'System.out::println'.(¡Ïáûÿÿÿÿ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(¡Ïáûÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ÀğÃƒ

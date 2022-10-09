@@ -1,0 +1,19 @@
+
+c
+java:S1192"HDefine a constant instead of duplicating this literal "/second" 5 times.(ÙÂÃÑüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ş•Òÿÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(×²û
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ö¡¹ê
+N	java:S106("9Replace this use of System.out or System.err by a logger.(Å×·ì
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(‰Îüşÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(´ûüÿÿÿÿ
+c
+java:S1192"HDefine a constant instead of duplicating this literal "/second" 5 times.(ÙÂÃÑüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ş•Òÿÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(×²û
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ö¡¹ê
+N	java:S106("9Replace this use of System.out or System.err by a logger.(Å×·ì
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(‰Îüşÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(´ûüÿÿÿÿ

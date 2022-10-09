@@ -1,0 +1,21 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(˜ûÙçÿÿÿÿÿ8 ¼èÐ˜0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾þ•Òÿÿÿÿÿ
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÝüÊûÿÿÿÿ8¥¼èÐ˜0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ’ìžýÿÿÿÿ8¥¼èÐ˜0
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦â±¾8¥¼èÐ˜0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ôýº·þÿÿÿÿ8¦¼èÐ˜0
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îå¼î8­ÛñÐ˜0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Îñâ‘8­ÛñÐ˜0
+h
+java:S1128"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8©ºîÐ˜0
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(˜ûÙçÿÿÿÿÿ8 ¼èÐ˜0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾þ•Òÿÿÿÿÿ
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÝüÊûÿÿÿÿ8¥¼èÐ˜0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ’ìžýÿÿÿÿ8¥¼èÐ˜0
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦â±¾8¥¼èÐ˜0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ôýº·þÿÿÿÿ8¦¼èÐ˜0
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îå¼î8­ÛñÐ˜0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Îñâ‘8­ÛñÐ˜0
+h
+java:S1128"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ8©ºîÐ˜0

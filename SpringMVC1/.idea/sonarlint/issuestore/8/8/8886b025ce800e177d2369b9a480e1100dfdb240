@@ -1,0 +1,31 @@
+
+c
+java:S1192"HDefine a constant instead of duplicating this literal "/second" 5 times.(Ð¥ùúÿÿÿÿÿ
+a
+java:S1192"FDefine a constant instead of duplicating this literal "enter" 4 times.(‚íŠÖýÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(’ù‡´
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾þ•Òÿÿÿÿÿ
+r
+java:S4144#"WUpdate this method so that its implementation is not identical to "action4" on line 26.(£ý¬—ýÿÿÿÿ
+r
+java:S4144*"WUpdate this method so that its implementation is not identical to "action4" on line 26.(ê…Ê«þÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿ²Õ¼üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ
+c
+java:S1192"HDefine a constant instead of duplicating this literal "/second" 5 times.(Ð¥ùúÿÿÿÿÿ
+a
+java:S1192"FDefine a constant instead of duplicating this literal "enter" 4 times.(‚íŠÖýÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(’ù‡´
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾þ•Òÿÿÿÿÿ
+r
+java:S4144#"WUpdate this method so that its implementation is not identical to "action4" on line 26.(£ý¬—ýÿÿÿÿ
+r
+java:S4144*"WUpdate this method so that its implementation is not identical to "action4" on line 26.(ê…Ê«þÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿ²Õ¼üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(‚íŠÖýÿÿÿÿ

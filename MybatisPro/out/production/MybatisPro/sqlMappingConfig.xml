@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载配置文件 加载完后底下可以通过${name}取配置文件的数据-->
+    <properties resource="db.properties"/>
+    
+    <!--配置属性-->
+    <settings>
+        <!--配置sql打印-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!--配置驼峰命名-->
+        <!--<setting name="mapUnderscoreToCamelCase" value="true"/>-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode"/>
+
+    </settings>
+
+    <!--定义别名 别名大小写不敏感-->
+    <typeAliases>
+        <!--定义单个别名 别名大小写不敏感-->
+        <typeAlias alias="Customer" type="com.itlike_params.domain.Customer"/>
+
+        <!--批量定义别名 别名大小写不敏感  如果当前包类与子包类重名会有异常,可以在POJO类上使用注解@Alias("别名")-->
+        <package name="com.itlike_params"/>
+        
+    </typeAliases>
+
+    <!-- spring整合后 environments配置将废除 使用spring中的连接池 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 使用jdbc事务管理 -->
+            <transactionManager type="JDBC" />
+            <!-- 数据库连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}" />
+                <property name="url" value="${jdbc.url}" />
+                <property name="username" value="${jdbc.username}" />
+                <property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--三种映射的方法-->
+    <mappers>
+        <mapper resource="com/itlike/domain/CustomerMapper.xml"></mapper>
+        <mapper resource="com/itlike_proxy/domain/CustomerMapper.xml"></mapper>
+
+        <!--使用类的映射方法 需要映射xml和接口放在同一个文件夹中 且名称保存一致-->
+        <mapper class="com.itlike_params.dao.CustomerMapper"></mapper>
+        <mapper class="com.itlike_resvalue.dao.CustomerMapper"></mapper>
+        <mapper class="com.itlike_sqllabel.dao.CustomerMapper"></mapper>
+        <mapper class="com.itlike_resvalue.dao.OrderMapper"></mapper>
+
+        <mapper class="com.itlike_resvalue.dao.TeachMapper"></mapper>
+        <mapper class="com.itlike_resvalue.dao.StudentMapper"></mapper>
+
+        <!-- 映射指定包下的所有接口: <package name="com.itlike_params"/>-->
+    </mappers>
+</configuration>

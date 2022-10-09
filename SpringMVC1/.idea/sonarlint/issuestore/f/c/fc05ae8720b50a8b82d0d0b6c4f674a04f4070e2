@@ -1,0 +1,17 @@
+
+ˆ
+java:S1319B"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(æ€èÏýÿÿÿÿ
+ˆ
+java:S1319K"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(È–Ûôùÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„•ªÂ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾þ•Òÿÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ
+ˆ
+java:S1319B"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(æ€èÏýÿÿÿÿ
+ˆ
+java:S1319K"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(È–Ûôùÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„•ªÂ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾þ•Òÿÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.itlike_resvalue.dao.TeachMapper">
+    <select id="getAllTeach" resultType="com.itlike_resvalue.domain.Teach">
+        select *
+        from ``
+    </select>
+    <select id="getTeachByStuId" resultType="com.itlike_resvalue.domain.Teach">
+        select *
+        from `teach`
+        where teach_id in (select teach_id from `stu_teach` where stu_id = #{id})
+    </select>
+    <insert id="addTeacher" useGeneratedKeys="true" keyColumn="teach_id" keyProperty="teach_id">
+        insert into `teach` (teach_name)values(#{teach_name})
+    </insert>
+
+</mapper>

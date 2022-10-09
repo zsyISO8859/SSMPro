@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="myTest">
+    <!--根据cust_id查询客户-->
+    <select id="queryCustomerById" parameterType="Integer" resultType="com.itlike.domain.Customer">
+        SELECT * FROM `customer` WHERE cust_id  = #{cust_id}
+    </select>
+
+    <!--根据cust_name模糊查询客户-->
+    <select id="queryCustomerByName" parameterType="String" resultType="com.itlike.domain.Customer">
+        select * from `customer` where cust_name like #{name}
+    </select>
+
+    <!--根据cust_name模糊查询客户1-->
+    <select id="queryCustomerByName1" parameterType="String" resultType="com.itlike.domain.Customer">
+        select * from `customer` where cust_name like '%${value}%'
+    </select>
+
+    <!--新增 且获取新增单据的id-->
+    <insert id="insertCustomer" parameterType="com.itlike.domain.Customer" >
+
+        <selectKey resultType="Integer" keyColumn="cust_id" keyProperty="cust_id" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into `customer` (cust_name,cust_profession,cust_phone,email)
+        values (#{cust_name},#{cust_profession},#{cust_phone},#{email})
+    </insert>
+    <!--更新-->
+    <update id="updateCustomer" parameterType="com.itlike.domain.Customer">
+        update `customer` set cust_name = #{cust_name},cust_phone = #{cust_phone} where cust_id = #{cust_id}
+    </update>
+    <!--删除-->
+    <delete id="deleteCustomer" parameterType="com.itlike.domain.Customer">
+        delete from `customer` where cust_id = #{cust_id}
+    </delete>
+
+    <!--查出全部-->
+    <select id="queryAll" resultType="com.itlike.domain.Customer">
+        select * from `customer`
+    </select>
+</mapper>

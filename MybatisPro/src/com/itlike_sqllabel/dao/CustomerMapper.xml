@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itlike_sqllabel.dao.CustomerMapper">
+
+
+    <select id="findByContent" resultType="com.itlike_params.domain.Customer">
+        select * from `customer` where 1=1
+        <if test="cust_id!=null">
+            cust_id = #{cust_id}
+        </if>
+        <if test="cust_name!=null and cust_name!=''">
+            and cust_name = #{cust_name}
+        </if>
+    </select>
+
+    <select id="findByContent1" resultType="com.itlike_params.domain.Customer">
+        select * from `customer`
+        <where>
+            <if test="cust_id!=null">
+                and cust_id = #{cust_id}
+            </if>
+            <if test="cust_name!=null and cust_name!=''">
+                and cust_name = #{cust_name}
+            </if>
+        </where>
+
+    </select>
+
+    <select id="findByContent2" resultType="com.itlike_params.domain.Customer">
+        <include refid="sqlpart"></include>
+        where cust_id = #{cust_id}
+        and cust_name = #{cust_name}
+    </select>
+    <sql id="sqlpart">
+        select *
+        from `customer`
+    </sql>
+
+    <select id="findByContent3" resultType="com.itlike_params.domain.Customer">
+        <include refid="sqlpart"></include>
+        <where>
+            <foreach collection="array" item="item" open="cust_id in (" close=")" separator=",">
+                #{item}
+            </foreach>
+        </where>
+    </select>
+
+    <select id="findByContent4" resultType="com.itlike_params.domain.Customer">
+        <include refid="sqlpart"></include>
+        <where>
+            <foreach collection="list" item="item" open="cust_id in (" close=")" separator=",">
+                #{item}
+            </foreach>
+        </where>
+    </select>
+    <select id="findByContent5" resultType="com.itlike_params.domain.Customer">
+        <include refid="sqlpart"></include>
+        <where>
+            <foreach collection="volist" item="item" open="cust_id in (" close=")" separator=",">
+                #{item}
+            </foreach>
+        </where>
+    </select>
+    <select id="findByContent6" resultType="com.itlike_params.domain.Customer">
+        <include refid="sqlpart"></include>
+        <where>
+            <foreach collection="voids" item="item" open="cust_id in (" close=")" separator=",">
+                #{item}
+            </foreach>
+        </where>
+    </select>
+
+</mapper>

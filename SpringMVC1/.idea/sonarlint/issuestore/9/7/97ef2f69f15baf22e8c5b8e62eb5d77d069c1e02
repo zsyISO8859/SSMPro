@@ -1,0 +1,29 @@
+
+f
+java:S1192"KDefine a constant instead of duplicating this literal "second.jsp" 3 times.(„°Ì·şÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(•Åòù
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ş•Òÿÿÿÿÿ
+X
+java:S3518"CMake sure this expression can't be zero before doing this division.(›º<
+Y
+java:S2166"CRename this class to remove "Exception" or correct its inheritance.(•Åòù
+J
+java:S1854"5Remove this useless assignment to local variable "i".(›º<
+;
+java:S1481"&Remove this unused "i" local variable.(›º<
+k
+java:S1128"URemove this unused import 'org.springframework.web.bind.annotation.ExceptionHandler'.(–Œ•¬
+f
+java:S1192"KDefine a constant instead of duplicating this literal "second.jsp" 3 times.(„°Ì·şÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(•Åòù
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ş•Òÿÿÿÿÿ
+X
+java:S3518"CMake sure this expression can't be zero before doing this division.(›º<
+Y
+java:S2166"CRename this class to remove "Exception" or correct its inheritance.(•Åòù
+J
+java:S1854"5Remove this useless assignment to local variable "i".(›º<
+;
+java:S1481"&Remove this unused "i" local variable.(›º<
+k
+java:S1128"URemove this unused import 'org.springframework.web.bind.annotation.ExceptionHandler'.(–Œ•¬

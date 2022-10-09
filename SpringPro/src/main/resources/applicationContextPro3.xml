@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean class="com.aop3_xml.domain.User" id="user"></bean>
+    <bean class="com.aop3_xml.aspect.MyAspect" id="aspect"></bean>
+
+    <aop:config>
+        <!--配置切入点 execution表达式语法：
+        execution(* com.aop3_xml.domain.User.save(..))
+        *表示任意类型 类型有public....
+        ..表示 任意参数
+
+        execution(* com.aop3_xml.domain.User.*(..)) 表示com.aop3.domain.User类下的任意方法
+        execution(* com.aop3_xml.domain..*.*(..)) 表示com.aop3.domain包下的所有类的所有方法
+        execution(* com.aop3_xml.domain.UserImpl+.save(..)) 表示当前类和子类的save方法
+             -->
+        <aop:pointcut id="beforecut" expression="execution(* com.aop3_xml.domain.User.save(..))"/>
+        <aop:pointcut id="aroundcut" expression="execution(* com.aop3_xml.domain.User.update(..))"/>
+        <aop:pointcut id="afterreturningcut" expression="execution(* com.aop3_xml.domain.User.delete(..))"/>
+        <aop:pointcut id="exceptioncut" expression="execution(* com.aop3_xml.domain.User.find(..))"/>
+        <aop:pointcut id="finialcut" expression="execution(* com.aop3_xml.domain.User.finish(..))"/>
+        <!--配置切面-->
+        <aop:aspect ref="aspect">
+            <aop:before method="checkAuth" pointcut-ref="beforecut"/>
+            <aop:around method="around" pointcut-ref="aroundcut"/>
+            <aop:after-returning method="afterreturning" pointcut-ref="afterreturningcut" returning="ex"/>
+            <aop:after-throwing method="exception" throwing="ex" pointcut-ref="exceptioncut"/>
+            <aop:after method="finial" pointcut-ref="finialcut"/>
+        </aop:aspect>
+
+    </aop:config>
+
+</beans>

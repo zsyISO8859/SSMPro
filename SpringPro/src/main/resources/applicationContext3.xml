@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="user" class="com.example.domain.User">
+    <property name="str">
+        <list>
+            <value>zs</value>
+            <value>ls</value>
+            <value>rw</value>
+        </list>
+    </property>
+    <property name="hobby">
+        <list>
+            <value>篮球</value>
+            <value>乒乓球</value>
+            <value>足球</value>
+        </list>
+    </property>
+    <property name="set">
+        <set>
+            <value>set1</value>
+            <value>set2</value>
+            <value>set3</value>
+        </set>
+    </property>
+    <property name="map">
+        <map>
+            <entry key="key1" value="value1"></entry>
+            <entry key="key2" value="value2"></entry>
+            <entry key="key3" value="value3"></entry>
+        </map>
+    </property>
+</bean>
+
+</beans>
